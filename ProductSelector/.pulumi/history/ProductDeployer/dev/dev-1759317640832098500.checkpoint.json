@@ -1,0 +1,670 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/ProductDeployer/dev",
+        "latest": {
+            "manifest": {
+                "time": "2025-10-01T16:20:40.8042595+05:00",
+                "magic": "e151377f41b4045974ddd5f40a88fe639ba8b472299593101102ef34d2330671",
+                "version": "v3.197.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:4Yj7nftz5qQ=:v1:5mGrxSuQuod0VB1t:Lq7iFgutQOUKXAzmMjpsw6MRvIDSKg=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::ProductDeployer::pulumi:pulumi:Stack::ProductDeployer-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2025-10-01T11:20:31.0141144Z",
+                    "modified": "2025-10-01T11:20:31.0141144Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::ProductDeployer::pulumi:providers:docker::default_4_9_0",
+                    "custom": true,
+                    "id": "f55f9c37-0252-4707-9081-19b75f6c0a42",
+                    "type": "pulumi:providers:docker",
+                    "inputs": {
+                        "__internal": {},
+                        "version": "4.9.0"
+                    },
+                    "outputs": {
+                        "version": "4.9.0"
+                    },
+                    "created": "2025-10-01T11:20:31.1790434Z",
+                    "modified": "2025-10-01T11:20:31.1790434Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::ProductDeployer::docker:index/image:Image::product-frontend",
+                    "custom": true,
+                    "id": "product-frontend:1.0.0",
+                    "type": "docker:index/image:Image",
+                    "inputs": {
+                        "build": {
+                            "context": "C:\\Users\\ILI Digital User\\source\\repos\\ProductContractsPOC\\Samples\\product-frontend",
+                            "contextDigest": "3eb54d941b35178c9168120523b783e9178b1348de0707df3564014443044c14",
+                            "dockerfile": "C:\\Users\\ILI Digital User\\source\\repos\\ProductContractsPOC\\Samples\\product-frontend/Dockerfile",
+                            "platform": "linux/amd64"
+                        },
+                        "buildOnPreview": false,
+                        "imageName": "product-frontend:1.0.0",
+                        "skipPush": true
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:0p7rAbx3SuIUx6lr:Do2UW9iBOGxLdElLnTJdMcdPlijkQyTXCAoRKfFpU9mn6PQgURga1NhuflpnJwFWNmTTJ1PWH/CBP3PFzdEdbuc7BuwjQv+gtjOnUbrDuWAsjOAmgTlKkBdYHNDgem6absdb0MtOgGV4oiOv56TJ9toCzK15g9tM5ubPdgqvykaTSALYi7sj/2b9DrZqAkJFm2HIupaimBu33aeV6gJxSdnEMGks2NAYZJWvq1eeQbwHy36KXo1lYz779vqRn6mdHDAb0nVcqTJF8z/gTUznj9ZXZ5DbiB73vfrvbt6VnrWN2jAPxIkTRXiX78B724iMsZJUfm7AZ6HhP/B9qvLafgU/CufKkICZCE2tibI0XKYRrJPmgClbiTvImLaPvARUk/STwTtIPdAJ+tfi9QJGERhkCK9DYw/+pxoB4w2LXBOKa8ccf2Jig8ovSsxw/l3WzXRysilzVHGI2PKMzXc8QbpSAxkJ1mICslT1OdybY+qK+widM8TSm8m9DJhKzu9IaVoZg8N0vnW6EeNbnbNMs0T280l0NSpfF0yCGuX46hzlLx57ZGkrE/gtJc+C7AQ="
+                        },
+                        "baseImageName": "product-frontend:1.0.0",
+                        "context": "C:\\Users\\ILI Digital User\\source\\repos\\ProductContractsPOC\\Samples\\product-frontend",
+                        "dockerfile": "Dockerfile",
+                        "imageName": "product-frontend:1.0.0",
+                        "platform": "linux/amd64",
+                        "registryServer": "",
+                        "repoDigest": "sha256:f736e2b4f88d741aff59e5d25f3873172540e985f1fa5f6bd55ed2b9670db79b"
+                    },
+                    "parent": "urn:pulumi:dev::ProductDeployer::pulumi:pulumi:Stack::ProductDeployer-dev",
+                    "provider": "urn:pulumi:dev::ProductDeployer::pulumi:providers:docker::default_4_9_0::f55f9c37-0252-4707-9081-19b75f6c0a42",
+                    "propertyDependencies": {
+                        "build": [],
+                        "buildOnPreview": [],
+                        "imageName": [],
+                        "skipPush": []
+                    },
+                    "created": "2025-10-01T11:20:39.3037551Z",
+                    "modified": "2025-10-01T11:20:39.3037551Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::ProductDeployer::docker:index/image:Image::product-api",
+                    "custom": true,
+                    "id": "product-api:1.0.0",
+                    "type": "docker:index/image:Image",
+                    "inputs": {
+                        "build": {
+                            "context": "C:\\Users\\ILI Digital User\\source\\repos\\ProductContractsPOC\\Samples\\product-api",
+                            "contextDigest": "bb59f77870c63b5c1575e993e0543fddd497b3617facf73749a1e5e874676403",
+                            "dockerfile": "C:\\Users\\ILI Digital User\\source\\repos\\ProductContractsPOC\\Samples\\product-api/Dockerfile",
+                            "platform": "linux/amd64"
+                        },
+                        "buildOnPreview": false,
+                        "imageName": "product-api:1.0.0",
+                        "skipPush": true
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:YlP+tOmdGM8ms/+b:h1PmI5fImBG0TWuC9gwKgV8eyewptDo5yYObBDB22gXng+ROo/YJuGMAMx4R1+2DUtKQHHSWIKFBLMOTl9BhDXhjjKLAZrxXUdy0QXZlCnwL3CSZJgUxQNQszLXJElJ0XkAXd8BtUfCBLvKy1yf8EaBWpda/SAVm8wJi+i96hCbYYaT12cbJxa/WbSux7vIVSkc/n0jy+EqHpY48dCkXjUOx1akY95YQWDzEnCOl4lt9jvZ1dxWlGH5UzJ6ZYZRle2Y3cBs6KdUS4ia/7ekksJiS96GXnCcB4Fad1QB0JOE3WGrApU8XekPicOjuI7Kv1xnz4Lc57qiNuwfvej/k5ls389Xmo1kNEo5O1YSb++Gy1LzSpq3PNQxqV0q4LEr655M+2q/eAG3mnMfPpq+I1+A9nVo2luumyL+3sSAA0WqQlUWadARI1+UaF2P2PFytuffQglwbj7VdiwfyLL+dHUyzrlIlKgyRwGXfeoINQz3MWndUDlxSK2xiVgSWsa+wwV9eJP9nQ/Sy+UPgo5cOrmeu5mPr3AWBhrJAi6A05Ls="
+                        },
+                        "baseImageName": "product-api:1.0.0",
+                        "context": "C:\\Users\\ILI Digital User\\source\\repos\\ProductContractsPOC\\Samples\\product-api",
+                        "dockerfile": "Dockerfile",
+                        "imageName": "product-api:1.0.0",
+                        "platform": "linux/amd64",
+                        "registryServer": "",
+                        "repoDigest": "sha256:7c335df521986ec023e2ff2c7184077775ab76c44f5d06da10da7a1fbdd2577d"
+                    },
+                    "parent": "urn:pulumi:dev::ProductDeployer::pulumi:pulumi:Stack::ProductDeployer-dev",
+                    "provider": "urn:pulumi:dev::ProductDeployer::pulumi:providers:docker::default_4_9_0::f55f9c37-0252-4707-9081-19b75f6c0a42",
+                    "propertyDependencies": {
+                        "build": [],
+                        "buildOnPreview": [],
+                        "imageName": [],
+                        "skipPush": []
+                    },
+                    "created": "2025-10-01T11:20:39.330113Z",
+                    "modified": "2025-10-01T11:20:39.330113Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::ProductDeployer::docker:index/image:Image::product-auth",
+                    "custom": true,
+                    "id": "product-auth:1.0.0",
+                    "type": "docker:index/image:Image",
+                    "inputs": {
+                        "build": {
+                            "context": "C:\\Users\\ILI Digital User\\source\\repos\\ProductContractsPOC\\Samples\\product-auth",
+                            "contextDigest": "3f37ca8e867302b8be303c592e1faf11f3713a489834464b383ce3ea02a98e6d",
+                            "dockerfile": "C:\\Users\\ILI Digital User\\source\\repos\\ProductContractsPOC\\Samples\\product-auth/Dockerfile",
+                            "platform": "linux/amd64"
+                        },
+                        "buildOnPreview": false,
+                        "imageName": "product-auth:1.0.0",
+                        "skipPush": true
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:aahlJJk/ku68dbXd:30ZVL1s6lHvKIkbGXXaxkh/wWn9j9rd8j7iRi8QkTCTMF8p66FbfUbzlQ3HAnn2T5649RKwgPAQ/ItmyJ7ecPA4FSrzYHu4rndxadSMEpZX/axa6Ur3Iacat34HD5FTXOtJpf5FcEdEJuF7OphULnsA2UCFD44xBJXGONpVWifS6ZJZTuYVMX8fGbXlX6NyJpWR+80z6I2CbLI3eicdrkFr7HIjuAAb+ngcnE6Yn4DH3DTH6saLuNEUxbRZ75BbEAm0CDPQ2h3kaIRSj35yz1XxDDO4gtm6g1YuCKnwXsMhDVOwpBic6d/QOK4EvoRlRmuG4UTeWDdKhanx9DfdUzDkktoXZQPJNPDzYt970RKfNeqDIr2u+OIAt4Fd7PTzviMVoPBObR1Bkih6t/i0X7kvT+03nIRsUvXkaihQZauBTTB0JNC01Qx0Y6+FYsJb//dq7lov6c2Jt2H6jrUAfG7yUts1YnEWw/iGkdo149IDFqz5O1PmGWWE6G5G2aQaf3Opb8weByhMXCQHbEwG1Ru3srp6dWXakEvu+nw1ZWwH1hdg="
+                        },
+                        "baseImageName": "product-auth:1.0.0",
+                        "context": "C:\\Users\\ILI Digital User\\source\\repos\\ProductContractsPOC\\Samples\\product-auth",
+                        "dockerfile": "Dockerfile",
+                        "imageName": "product-auth:1.0.0",
+                        "platform": "linux/amd64",
+                        "registryServer": "",
+                        "repoDigest": "sha256:9ac0d99744ef7345696ca91efcb509f8c6352a201a9e0e6f92d5e43d5672ed5f"
+                    },
+                    "parent": "urn:pulumi:dev::ProductDeployer::pulumi:pulumi:Stack::ProductDeployer-dev",
+                    "provider": "urn:pulumi:dev::ProductDeployer::pulumi:providers:docker::default_4_9_0::f55f9c37-0252-4707-9081-19b75f6c0a42",
+                    "propertyDependencies": {
+                        "build": [],
+                        "buildOnPreview": [],
+                        "imageName": [],
+                        "skipPush": []
+                    },
+                    "created": "2025-10-01T11:20:39.336278Z",
+                    "modified": "2025-10-01T11:20:39.336278Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::ProductDeployer::docker:index/container:Container::product-api-container",
+                    "custom": true,
+                    "id": "670d2d12e9e1a448df02efaa7712bebcda8813b1ba49ef7390a4044eeb792804",
+                    "type": "docker:index/container:Container",
+                    "inputs": {
+                        "__defaults": [
+                            "attach",
+                            "containerReadRefreshTimeoutMilliseconds",
+                            "logs",
+                            "memoryReservation",
+                            "mustRun",
+                            "networkMode",
+                            "readOnly",
+                            "removeVolumes",
+                            "restart",
+                            "rm",
+                            "start",
+                            "stdinOpen",
+                            "tty",
+                            "wait",
+                            "waitTimeout"
+                        ],
+                        "attach": false,
+                        "containerReadRefreshTimeoutMilliseconds": 15000,
+                        "envs": [
+                            "PRODUCT-AUTH_AUTH_URL=http://localhost:5000"
+                        ],
+                        "image": "product-api:1.0.0",
+                        "logs": false,
+                        "memoryReservation": 0,
+                        "mustRun": true,
+                        "name": "product-api-container",
+                        "networkMode": "bridge",
+                        "ports": [
+                            {
+                                "__defaults": [
+                                    "ip",
+                                    "protocol"
+                                ],
+                                "external": 5001,
+                                "internal": 80,
+                                "ip": "0.0.0.0",
+                                "protocol": "tcp"
+                            }
+                        ],
+                        "readOnly": false,
+                        "removeVolumes": true,
+                        "restart": "no",
+                        "rm": false,
+                        "start": true,
+                        "stdinOpen": false,
+                        "tty": false,
+                        "wait": false,
+                        "waitTimeout": 60
+                    },
+                    "outputs": {
+                        "__meta": "{\"schema_version\":\"2\"}",
+                        "attach": false,
+                        "bridge": "",
+                        "capabilities": null,
+                        "cgroupParent": null,
+                        "cgroupnsMode": null,
+                        "command": [],
+                        "containerLogs": null,
+                        "containerReadRefreshTimeoutMilliseconds": 15000,
+                        "cpuPeriod": null,
+                        "cpuQuota": null,
+                        "cpuSet": "",
+                        "cpuShares": 0,
+                        "cpus": null,
+                        "destroyGraceSeconds": null,
+                        "devices": [],
+                        "dns": null,
+                        "dnsOpts": null,
+                        "dnsSearches": null,
+                        "domainname": "",
+                        "entrypoints": [
+                            "dotnet",
+                            "product-api.dll"
+                        ],
+                        "envs": [
+                            "PRODUCT-AUTH_AUTH_URL=http://localhost:5000"
+                        ],
+                        "exitCode": null,
+                        "gpus": null,
+                        "groupAdds": null,
+                        "healthcheck": null,
+                        "hostname": "670d2d12e9e1",
+                        "hosts": [],
+                        "id": "670d2d12e9e1a448df02efaa7712bebcda8813b1ba49ef7390a4044eeb792804",
+                        "image": "product-api:1.0.0",
+                        "init": false,
+                        "ipcMode": "private",
+                        "labels": [],
+                        "logDriver": "json-file",
+                        "logOpts": null,
+                        "logs": false,
+                        "maxRetryCount": 0,
+                        "memory": 0,
+                        "memoryReservation": 0,
+                        "memorySwap": 0,
+                        "mounts": [],
+                        "mustRun": true,
+                        "name": "product-api-container",
+                        "networkDatas": [
+                            {
+                                "gateway": "172.17.0.1",
+                                "globalIpv6Address": "",
+                                "globalIpv6PrefixLength": 0,
+                                "ipAddress": "172.17.0.3",
+                                "ipPrefixLength": 16,
+                                "ipv6Gateway": "",
+                                "macAddress": "9e:e7:05:e4:82:51",
+                                "networkName": "bridge"
+                            }
+                        ],
+                        "networkMode": "bridge",
+                        "networksAdvanced": [],
+                        "pidMode": "",
+                        "ports": [
+                            {
+                                "external": 5001,
+                                "internal": 80,
+                                "ip": "0.0.0.0",
+                                "protocol": "tcp"
+                            }
+                        ],
+                        "privileged": false,
+                        "publishAllPorts": false,
+                        "readOnly": false,
+                        "removeVolumes": true,
+                        "restart": "no",
+                        "rm": false,
+                        "runtime": "runc",
+                        "securityOpts": [],
+                        "shmSize": 64,
+                        "start": true,
+                        "stdinOpen": false,
+                        "stopSignal": "",
+                        "stopTimeout": 0,
+                        "storageOpts": null,
+                        "sysctls": null,
+                        "tmpfs": null,
+                        "tty": false,
+                        "ulimits": [],
+                        "uploads": [],
+                        "user": "",
+                        "usernsMode": "",
+                        "volumes": [],
+                        "wait": false,
+                        "waitTimeout": 60,
+                        "workingDir": "/app"
+                    },
+                    "parent": "urn:pulumi:dev::ProductDeployer::pulumi:pulumi:Stack::ProductDeployer-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::ProductDeployer::docker:index/image:Image::product-api"
+                    ],
+                    "provider": "urn:pulumi:dev::ProductDeployer::pulumi:providers:docker::default_4_9_0::f55f9c37-0252-4707-9081-19b75f6c0a42",
+                    "propertyDependencies": {
+                        "envs": [],
+                        "image": [
+                            "urn:pulumi:dev::ProductDeployer::docker:index/image:Image::product-api"
+                        ],
+                        "name": [],
+                        "ports": []
+                    },
+                    "created": "2025-10-01T11:20:40.3418208Z",
+                    "modified": "2025-10-01T11:20:40.3418208Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::ProductDeployer::docker:index/container:Container::product-frontend-container",
+                    "custom": true,
+                    "id": "5315647508ffc476e787b85fc86b2f58c6524ded90f8740129d54901199186bd",
+                    "type": "docker:index/container:Container",
+                    "inputs": {
+                        "__defaults": [
+                            "attach",
+                            "containerReadRefreshTimeoutMilliseconds",
+                            "logs",
+                            "memoryReservation",
+                            "mustRun",
+                            "networkMode",
+                            "readOnly",
+                            "removeVolumes",
+                            "restart",
+                            "rm",
+                            "start",
+                            "stdinOpen",
+                            "tty",
+                            "wait",
+                            "waitTimeout"
+                        ],
+                        "attach": false,
+                        "containerReadRefreshTimeoutMilliseconds": 15000,
+                        "envs": [
+                            "PRODUCT-API_API_URL=http://localhost:5001"
+                        ],
+                        "image": "product-frontend:1.0.0",
+                        "logs": false,
+                        "memoryReservation": 0,
+                        "mustRun": true,
+                        "name": "product-frontend-container",
+                        "networkMode": "bridge",
+                        "ports": [
+                            {
+                                "__defaults": [
+                                    "ip",
+                                    "protocol"
+                                ],
+                                "external": 5002,
+                                "internal": 80,
+                                "ip": "0.0.0.0",
+                                "protocol": "tcp"
+                            }
+                        ],
+                        "readOnly": false,
+                        "removeVolumes": true,
+                        "restart": "no",
+                        "rm": false,
+                        "start": true,
+                        "stdinOpen": false,
+                        "tty": false,
+                        "wait": false,
+                        "waitTimeout": 60
+                    },
+                    "outputs": {
+                        "__meta": "{\"schema_version\":\"2\"}",
+                        "attach": false,
+                        "bridge": "",
+                        "capabilities": null,
+                        "cgroupParent": null,
+                        "cgroupnsMode": null,
+                        "command": [],
+                        "containerLogs": null,
+                        "containerReadRefreshTimeoutMilliseconds": 15000,
+                        "cpuPeriod": null,
+                        "cpuQuota": null,
+                        "cpuSet": "",
+                        "cpuShares": 0,
+                        "cpus": null,
+                        "destroyGraceSeconds": null,
+                        "devices": [],
+                        "dns": null,
+                        "dnsOpts": null,
+                        "dnsSearches": null,
+                        "domainname": "",
+                        "entrypoints": [
+                            "dotnet",
+                            "product-frontend.dll"
+                        ],
+                        "envs": [
+                            "PRODUCT-API_API_URL=http://localhost:5001"
+                        ],
+                        "exitCode": null,
+                        "gpus": null,
+                        "groupAdds": null,
+                        "healthcheck": null,
+                        "hostname": "5315647508ff",
+                        "hosts": [],
+                        "id": "5315647508ffc476e787b85fc86b2f58c6524ded90f8740129d54901199186bd",
+                        "image": "product-frontend:1.0.0",
+                        "init": false,
+                        "ipcMode": "private",
+                        "labels": [],
+                        "logDriver": "json-file",
+                        "logOpts": null,
+                        "logs": false,
+                        "maxRetryCount": 0,
+                        "memory": 0,
+                        "memoryReservation": 0,
+                        "memorySwap": 0,
+                        "mounts": [],
+                        "mustRun": true,
+                        "name": "product-frontend-container",
+                        "networkDatas": [
+                            {
+                                "gateway": "172.17.0.1",
+                                "globalIpv6Address": "",
+                                "globalIpv6PrefixLength": 0,
+                                "ipAddress": "172.17.0.2",
+                                "ipPrefixLength": 16,
+                                "ipv6Gateway": "",
+                                "macAddress": "ea:25:05:3e:c7:63",
+                                "networkName": "bridge"
+                            }
+                        ],
+                        "networkMode": "bridge",
+                        "networksAdvanced": [],
+                        "pidMode": "",
+                        "ports": [
+                            {
+                                "external": 5002,
+                                "internal": 80,
+                                "ip": "0.0.0.0",
+                                "protocol": "tcp"
+                            }
+                        ],
+                        "privileged": false,
+                        "publishAllPorts": false,
+                        "readOnly": false,
+                        "removeVolumes": true,
+                        "restart": "no",
+                        "rm": false,
+                        "runtime": "runc",
+                        "securityOpts": [],
+                        "shmSize": 64,
+                        "start": true,
+                        "stdinOpen": false,
+                        "stopSignal": "",
+                        "stopTimeout": 0,
+                        "storageOpts": null,
+                        "sysctls": null,
+                        "tmpfs": null,
+                        "tty": false,
+                        "ulimits": [],
+                        "uploads": [],
+                        "user": "",
+                        "usernsMode": "",
+                        "volumes": [],
+                        "wait": false,
+                        "waitTimeout": 60,
+                        "workingDir": "/app"
+                    },
+                    "parent": "urn:pulumi:dev::ProductDeployer::pulumi:pulumi:Stack::ProductDeployer-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::ProductDeployer::docker:index/image:Image::product-frontend"
+                    ],
+                    "provider": "urn:pulumi:dev::ProductDeployer::pulumi:providers:docker::default_4_9_0::f55f9c37-0252-4707-9081-19b75f6c0a42",
+                    "propertyDependencies": {
+                        "envs": [],
+                        "image": [
+                            "urn:pulumi:dev::ProductDeployer::docker:index/image:Image::product-frontend"
+                        ],
+                        "name": [],
+                        "ports": []
+                    },
+                    "created": "2025-10-01T11:20:40.4756436Z",
+                    "modified": "2025-10-01T11:20:40.4756436Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::ProductDeployer::docker:index/container:Container::product-auth-container",
+                    "custom": true,
+                    "id": "c15b2666892b7de4e386da1e8ab2da756d0c5ac9207c5db3f6b3524b4186edfc",
+                    "type": "docker:index/container:Container",
+                    "inputs": {
+                        "__defaults": [
+                            "attach",
+                            "containerReadRefreshTimeoutMilliseconds",
+                            "logs",
+                            "memoryReservation",
+                            "mustRun",
+                            "networkMode",
+                            "readOnly",
+                            "removeVolumes",
+                            "restart",
+                            "rm",
+                            "start",
+                            "stdinOpen",
+                            "tty",
+                            "wait",
+                            "waitTimeout"
+                        ],
+                        "attach": false,
+                        "containerReadRefreshTimeoutMilliseconds": 15000,
+                        "envs": [],
+                        "image": "product-auth:1.0.0",
+                        "logs": false,
+                        "memoryReservation": 0,
+                        "mustRun": true,
+                        "name": "product-auth-container",
+                        "networkMode": "bridge",
+                        "ports": [
+                            {
+                                "__defaults": [
+                                    "ip",
+                                    "protocol"
+                                ],
+                                "external": 5000,
+                                "internal": 80,
+                                "ip": "0.0.0.0",
+                                "protocol": "tcp"
+                            }
+                        ],
+                        "readOnly": false,
+                        "removeVolumes": true,
+                        "restart": "no",
+                        "rm": false,
+                        "start": true,
+                        "stdinOpen": false,
+                        "tty": false,
+                        "wait": false,
+                        "waitTimeout": 60
+                    },
+                    "outputs": {
+                        "__meta": "{\"schema_version\":\"2\"}",
+                        "attach": false,
+                        "bridge": "",
+                        "capabilities": null,
+                        "cgroupParent": null,
+                        "cgroupnsMode": null,
+                        "command": [],
+                        "containerLogs": null,
+                        "containerReadRefreshTimeoutMilliseconds": 15000,
+                        "cpuPeriod": null,
+                        "cpuQuota": null,
+                        "cpuSet": "",
+                        "cpuShares": 0,
+                        "cpus": null,
+                        "destroyGraceSeconds": null,
+                        "devices": [],
+                        "dns": null,
+                        "dnsOpts": null,
+                        "dnsSearches": null,
+                        "domainname": "",
+                        "entrypoints": [
+                            "dotnet",
+                            "product-auth.dll"
+                        ],
+                        "envs": [],
+                        "exitCode": null,
+                        "gpus": null,
+                        "groupAdds": null,
+                        "healthcheck": null,
+                        "hostname": "c15b2666892b",
+                        "hosts": [],
+                        "id": "c15b2666892b7de4e386da1e8ab2da756d0c5ac9207c5db3f6b3524b4186edfc",
+                        "image": "product-auth:1.0.0",
+                        "init": false,
+                        "ipcMode": "private",
+                        "labels": [],
+                        "logDriver": "json-file",
+                        "logOpts": null,
+                        "logs": false,
+                        "maxRetryCount": 0,
+                        "memory": 0,
+                        "memoryReservation": 0,
+                        "memorySwap": 0,
+                        "mounts": [],
+                        "mustRun": true,
+                        "name": "product-auth-container",
+                        "networkDatas": [
+                            {
+                                "gateway": "172.17.0.1",
+                                "globalIpv6Address": "",
+                                "globalIpv6PrefixLength": 0,
+                                "ipAddress": "172.17.0.4",
+                                "ipPrefixLength": 16,
+                                "ipv6Gateway": "",
+                                "macAddress": "6e:73:9d:48:60:21",
+                                "networkName": "bridge"
+                            }
+                        ],
+                        "networkMode": "bridge",
+                        "networksAdvanced": [],
+                        "pidMode": "",
+                        "ports": [
+                            {
+                                "external": 5000,
+                                "internal": 80,
+                                "ip": "0.0.0.0",
+                                "protocol": "tcp"
+                            }
+                        ],
+                        "privileged": false,
+                        "publishAllPorts": false,
+                        "readOnly": false,
+                        "removeVolumes": true,
+                        "restart": "no",
+                        "rm": false,
+                        "runtime": "runc",
+                        "securityOpts": [],
+                        "shmSize": 64,
+                        "start": true,
+                        "stdinOpen": false,
+                        "stopSignal": "",
+                        "stopTimeout": 0,
+                        "storageOpts": null,
+                        "sysctls": null,
+                        "tmpfs": null,
+                        "tty": false,
+                        "ulimits": [],
+                        "uploads": [],
+                        "user": "",
+                        "usernsMode": "",
+                        "volumes": [],
+                        "wait": false,
+                        "waitTimeout": 60,
+                        "workingDir": "/app"
+                    },
+                    "parent": "urn:pulumi:dev::ProductDeployer::pulumi:pulumi:Stack::ProductDeployer-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::ProductDeployer::docker:index/image:Image::product-auth"
+                    ],
+                    "provider": "urn:pulumi:dev::ProductDeployer::pulumi:providers:docker::default_4_9_0::f55f9c37-0252-4707-9081-19b75f6c0a42",
+                    "propertyDependencies": {
+                        "envs": [],
+                        "image": [
+                            "urn:pulumi:dev::ProductDeployer::docker:index/image:Image::product-auth"
+                        ],
+                        "name": [],
+                        "ports": []
+                    },
+                    "created": "2025-10-01T11:20:40.7790029Z",
+                    "modified": "2025-10-01T11:20:40.7790029Z"
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}

@@ -1,0 +1,48 @@
+product:
+  id: product-api
+  displayName: API Service
+  version: "1.0.0"
+  projectPath: ../../Samples/product-api
+  image: product-api:1.0.0
+
+ports:
+  - name: http
+    containerPort: 80
+    externalPort: 5001
+
+inputs:
+  - name: AUTH_URL
+    type: url
+    required: true
+
+outputs:
+  - name: API_URL
+    type: url
+    route: /api
+
+
+
+
+
+
+# product:
+#   id: product-api
+#   displayName: API Service
+#   version: "1.0.0"
+#   image: product-api:1.0.0
+
+# ports:
+#   - name: http
+#     containerPort: 5001
+
+# inputs:
+#   - name: authUrl
+#     type: url
+#     required: true
+
+# outputs:
+#   - name: apiUrl
+#     type: url
+
+
+

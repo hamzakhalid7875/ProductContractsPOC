@@ -1,0 +1,38 @@
+product:
+  id: product-frontend
+  displayName: Frontend Service
+  version: "1.0.0"
+  image: product-frontend:1.0.0
+
+ports:
+  - name: http
+    containerPort: 80
+    externalPort: 5002   # Host port mapping
+
+# inputs:
+#   - name: apiUrl
+#     type: url
+#     required: true
+
+inputs:
+  - name: API_URL        # <-- explicit env var name (must match provider's output)
+    type: url
+    required: false
+
+
+
+
+# product:
+#   id: product-frontend
+#   displayName: Frontend Service
+#   version: "1.0.0"
+#   image: product-frontend:1.0.0
+
+# ports:
+#   - name: http
+#     containerPort: 5002
+
+# inputs:
+#   - name: apiUrl
+#     type: url
+#     required: true

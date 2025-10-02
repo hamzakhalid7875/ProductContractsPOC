@@ -1,0 +1,32 @@
+﻿@model ProductSelector.ViewModels.DependencyGraphViewModel
+
+<h2>Dependency Graph</h2>
+
+<h3>Products:</h3>
+<ul>
+    @foreach (var p in Model.Products)
+    {
+        <li>@p</li>
+    }
+</ul>
+
+<h3>Connections:</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Input</th>
+            <th>→</th>
+            <th>Output</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var kvp in Model.Connections)
+        {
+            <tr>
+                <td>@kvp.Key</td>
+                <td>→</td>
+                <td>@kvp.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>

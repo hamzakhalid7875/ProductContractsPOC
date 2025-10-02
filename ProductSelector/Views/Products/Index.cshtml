@@ -1,0 +1,51 @@
+﻿@model List<ProductSelector.ViewModels.ProductViewModel>
+
+<h3>Welcome @ViewBag.user</h3>
+<h5>Available Products</h5>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Version</th>
+            <th>Selected</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.DisplayName</td>
+                <td>@product.Version</td>
+                <td>@product.IsSelected</td>
+                <td>
+                    @if (product.IsSelected)
+                    {
+                        <form asp-action="Unselect" method="post">
+                            <input type="hidden" name="productId" value="@product.ProductId" />
+                            <button type="submit" class="btn btn-danger">Unselect</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <form asp-action="Select" method="post">
+                            <input type="hidden" name="productId" value="@product.ProductId" />
+                            <button type="submit" class="btn btn-primary">Select</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form asp-action="Deploy" method="post">
+    <input type="hidden" name="destroy" value="false" />
+    <button type="submit" class="btn btn-success">Deploy Selected Products</button>
+</form>
+
+<form asp-action="Deploy" method="post">
+    <input type="hidden" name="destroy" value="true" />
+    <button type="submit" class="btn btn-danger">Destroy</button>
+</form>

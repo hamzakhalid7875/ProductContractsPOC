@@ -1,0 +1,19 @@
+product:
+  id: product-auth
+  displayName: Authentication Service
+  version: "1.0.0"
+  image: product-auth:1.0.0
+
+ports:
+  - name: http
+    containerPort: 80
+    externalPort: 5000
+
+# outputs:
+#   - name: authUrl
+#     type: url
+
+outputs:
+  - name: AUTH_URL      # <— env var name (used by consumers)
+    type: url
+    route: /auth
