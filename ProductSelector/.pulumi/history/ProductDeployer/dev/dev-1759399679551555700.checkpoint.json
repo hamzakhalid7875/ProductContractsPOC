@@ -4,7 +4,7 @@
         "stack": "organization/ProductDeployer/dev",
         "latest": {
             "manifest": {
-                "time": "2025-10-02T15:19:07.5918655+05:00",
+                "time": "2025-10-02T15:07:59.5277787+05:00",
                 "magic": "e151377f41b4045974ddd5f40a88fe639ba8b472299593101102ef34d2330671",
                 "version": "v3.197.0"
             },
@@ -56,7 +56,7 @@
                     "outputs": {
                         "__inputs": {
                             "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
-                            "ciphertext": "v1:X9dPhas9ULJe530n:xb3FIT9mdaDthy+Lhq0zW+7r5wFX73f+H0bHiygf7E05nmP6xiqkkFV8bqSsQD4gZ1Sop7SenncF3uVfWYYMy1ut4bdKVvE/ev8wAZ/y8+jjFrTRO+792z4+qPxAN2ylQLwLRvvAyaD48qbSGV9F5kUPr0KkanwBDm2JJdwJc0w786LSh9gJv7itnrg/+7sn25k8rQhpLJMNOIoyW7tSrr6dBgfHSd6ahYHO5tURCoG+6NkeQxkgrbgT2/Zmfbb6HJf8sFRo2mM417Z6FFCcZoBMxGiYsul1up9KK+NCBp8/rU00mL6HGrJUcK4IG+TuPpOQfNyoJpMXDUy1MJLd/Q7tORLZc1/BjDP+Jr624bpFCrqpBrIpydAl8Qir6/+8ZUSSzVaJLIn3Mp5c64/jTB9atQ1KqJD6LOUoDXUcFMS8WNmQWj13S4FCWeAZXT0x67wRJ1QPV/VjAn3xYKJuEYCeq5u40b/CNNoj0uT1nKfQEuFv8KJZzpr14fejCCfHfvxqLy2okGcmlpHt1UNOm/S/44O7X4Hk8Yu0I2thwO5D2Cy+sKg9dhZjZwPxFZI="
+                            "ciphertext": "v1:lm+Vw86GSbcms5IN:A3ellTGK+EGJnA3ZJd2eM1G5iaPlvkW8D4dSP5KVb+irRa3Oz11iXIoZqUObnpfpd9j724+fWUHcZB/XG5kCzdTvw1aTzQZbzlsFZKmytXuLrvUrKdMPwLvlif4dF05cvYFQ2IhBwxjG/qHlbW4+bBnkG6jmRzahqF4zdNZ1Z3krGO0UWmN/UXjkA5n8fOzSIwgM3kEBCX5ybYjOI4219CtUZi5mZaCZF1RTerRtPEHIK9XXZd6oMG9Jo25O9+a+C5UJjeMdKHPp41Iu97jQqMDz8oPgoxYOTxCv1C3SGJOoWvyVQ6d28eTAPYW61l37wuJD2BLFPC/zoZcLwvLTdwGa1Hg2tQXixp3LtNb5MDTNdH6TrxTWrn1/+VEekBkor1EjheiI3iYnVL9Yqx4UYkJ3Glq/mAY8bNJImXp2CUaxPPxnvaJco9KKn2vi0fJvRsC0BO+jYEIMk/I72sJzZGj9vgdDEK1bHpZ3rYKSf5W1YI1W2nlyvLjJi/TdLTi5g9jwXRvj75vW5x1AriNAs4sRrbNhlvG5v2eInFDqv8SM8uP6+QHdzLzTDbbDEcI="
                         },
                         "baseImageName": "product-frontend:1.0.0",
                         "context": "C:\\Users\\ILI Digital User\\source\\repos\\ProductContractsPOC\\Samples\\product-frontend",
@@ -148,9 +148,9 @@
                         "cpus": null,
                         "destroyGraceSeconds": null,
                         "devices": [],
-                        "dns": [],
-                        "dnsOpts": [],
-                        "dnsSearches": [],
+                        "dns": null,
+                        "dnsOpts": null,
+                        "dnsSearches": null,
                         "domainname": "",
                         "entrypoints": [
                             "dotnet",
@@ -159,7 +159,7 @@
                         "envs": [],
                         "exitCode": null,
                         "gpus": null,
-                        "groupAdds": [],
+                        "groupAdds": null,
                         "healthcheck": null,
                         "hostname": "49f86cc105c7",
                         "hosts": [],
@@ -169,7 +169,7 @@
                         "ipcMode": "private",
                         "labels": [],
                         "logDriver": "json-file",
-                        "logOpts": {},
+                        "logOpts": null,
                         "logs": false,
                         "maxRetryCount": 0,
                         "memory": 0,
@@ -214,9 +214,9 @@
                         "stdinOpen": false,
                         "stopSignal": "",
                         "stopTimeout": 0,
-                        "storageOpts": {},
-                        "sysctls": {},
-                        "tmpfs": {},
+                        "storageOpts": null,
+                        "sysctls": null,
+                        "tmpfs": null,
                         "tty": false,
                         "ulimits": [],
                         "uploads": [],
@@ -241,7 +241,7 @@
                         "ports": []
                     },
                     "created": "2025-10-02T10:07:59.509755Z",
-                    "modified": "2025-10-02T10:19:06.2062937Z"
+                    "modified": "2025-10-02T10:07:59.509755Z"
                 }
             ],
             "metadata": {}

@@ -9,10 +9,7 @@ ports:
     containerPort: 80
     externalPort: 5002   # Host port mapping
 
-# inputs:
-#   - name: apiUrl
-#     type: url
-#     required: true
+
 
 inputs:
   - name: API_URL        # <-- explicit env var name (must match provider's output)

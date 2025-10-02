@@ -9,9 +9,7 @@ ports:
     containerPort: 80
     externalPort: 5000
 
-# outputs:
-#   - name: authUrl
-#     type: url
+
 
 outputs:
   - name: AUTH_URL      # <— env var name (used by consumers)
